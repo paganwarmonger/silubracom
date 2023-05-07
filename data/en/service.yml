@@ -1,0 +1,44 @@
+################################# Service #################################
+service:
+  enable : true
+  title : Our Services
+  sub_title : SILUBRA offers a wide range of marketing research services to its clients in three key areas
+  bg_image: images/backgrounds/triangle_background.png
+  service_item :
+    # service item loop
+    - name : Brand
+      icon : ti-world # themify icon pack : https://themify.me/themify-icons
+      image: images/services/brand.png
+      content : Lorem ipsum dolor sit amet, consectetur.. 
+      list_items:
+        - text: Advertising and tracking
+        - text: Campaign / promotion effectiveness
+        - text: Image Study
+        - text: Positioning
+        - text: Advertising and tracking
+        - text: Brand Equity
+
+    - name : Consumer
+      icon : ti-layout # themify icon pack : https://themify.me/themify-icons
+      image: images/services/consumer.png
+      content : Lorem ipsum dolor sit amet, consectetur..
+      list_items:
+        - text: Usage& Attitude
+        - text: Segmentation
+        - text: Satisfaction
+        - text: Market understanding
+        - text: Mystery shopping
+        - text: Purchase behaviour
+      
+    # service item loop
+    - name : Product
+      icon : ti-blackboard # themify icon pack : https://themify.me/themify-icons
+      image: images/services/product.png
+      content : Lorem ipsum dolor sit amet, consectetur.. 
+      list_items:
+        - text: Product test
+        - text: Concept test
+        - text: New product development
+        - text: Name & packaging test
+        - text: Shelf impact
+        - text: Sniff test

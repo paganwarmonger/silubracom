@@ -1,0 +1,27 @@
+############################# feature ###################################
+aboutsilubra:
+  enable : true
+  title: "Hakkımızda"
+  image : images/backgrounds/research.png
+  image_webp : images/about/about-business-man.webp
+  sub_title : "SILUBRA markaların sektörel ihtiyaçlarına cevap veren bir araştırma şirketidir;"
+  content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempora itaque, autem dolores culpa cum mollitia voluptate nesciunt voluptatibus quasi."
+  seperator_image :
+  divided_content: "SILUBRA kapsamlı Adhoc deneyimi ile ileri teknik analizleri kullanır"
+  divided_image: images/about/divided_image.jpg
+  divider_image: images/about/divider-logo.png
+  feature_item : 
+      # feature item loop
+    - title : SEO Optimized
+      icon : ti-world # themify icon pack : https://themify.me/themify-icons
+      content : 20 yıllık profesyonel tecrübesi ile müşterilerine kendinden emin bir araştırma anlayışı ile hizmet verir.
+      
+      # feature item loop
+    - title : Easy Customization
+      icon : ti-panel # themify icon pack : https://themify.me/themify-icons
+      content : Markanıza, müşterilerinize ve ürünlerinize odaklanarak net sonuçlar için özelleştirilmiş çözümler sunar.
+
+      # feature item loop
+    - title : SEO Optimized
+      icon : ti-stats-up # themify icon pack : https://themify.me/themify-icons
+      content : Açık ve ileri ölçüm teknikleri ile doğru pazarlama ve iletişim kararlarının alınmasında yardımcı rol oynar.

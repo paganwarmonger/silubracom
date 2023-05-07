@@ -1,0 +1,29 @@
+############################## Contact #############################
+contact:
+  enable : true
+  title : İletişim
+  subtitle : İletişim Detayları
+  bg_image: images/backgrounds/contactus.jpg
+  content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero, provident, eum eligendi blanditiis ex explicabo vitae nostrum facilis asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore adipisci.
+
+  # Contact details
+  contact_list:
+    - icon : ti-location-pin # themify icon pack : https://themify.me/themify-icons
+      info : "Küçük Namazgah Cad. Kaleseramik Evleri O/4, 34680 Çengelköy - İSTANBUL"
+      
+    - icon : ti-mobile # themify icon pack : https://themify.me/themify-icons
+      info : "Phone: (0216) 318 73 25"
+      
+    - icon : ti-email # themify icon pack : https://themify.me/themify-icons
+      info : "Email: info@silubra.com"
+
+
+  # Contact form
+  contact_form:
+    enable : false
+    form_action : "#" #contact form works with https://formspree.io
+    name : "Your Name"
+    email : "Your Email"
+    subject : "Subject"
+    message : "Message"
+    submit : "Submit"

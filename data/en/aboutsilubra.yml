@@ -1,0 +1,27 @@
+############################# feature ###################################
+aboutsilubra:
+  enable : true
+  title: "About Us"
+  image : images/backgrounds/research.png
+  image_webp : images/about/about-business-man.webp
+  sub_title : "SILUBRA is a full staged research agency providing;"
+  content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempora itaque, autem dolores culpa cum mollitia voluptate nesciunt voluptatibus quasi."
+  seperator_image :
+  divided_content: "SILUBRA uses advanced level analysis through an extensive ad hoc experience"
+  divided_image: images/about/divided_image.jpg
+  divider_image: images/about/divider-logo.png
+  feature_item : 
+      # feature item loop
+    - title : SEO Optimized
+      icon : ti-world # themify icon pack : https://themify.me/themify-icons
+      content : Confident service based on more than 20 years of professional research experience.
+      
+      # feature item loop
+    - title : Easy Customization
+      icon : ti-panel # themify icon pack : https://themify.me/themify-icons
+      content : Customized solutions to achieve concrete results focuses on three key areas; your brand,your customers and your products.
+
+      # feature item loop
+    - title : SEO Optimized
+      icon : ti-stats-up # themify icon pack : https://themify.me/themify-icons
+      content : Advanced and clear measurement to enable the management to take right marketing and communication decision.

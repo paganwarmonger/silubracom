@@ -1,0 +1,50 @@
+{{ $data := index site.Data site.Language.Lang }}
+
+{{ if $data.service.service.enable}}
+{{ with $data.service.service}}
+{{"<!-- service -->" | safeHTML }}
+<section id="services" class="bg-one section padding-50-v" style='background-image: url("{{ .bg_image | absURL }}")'>
+
+	<!-- add background image -->
+	<img class="d-none" src="{{ .bg_image | absURL }}" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url({{ .bg_image | absURL }})'"/>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				{{"<!-- section title -->" | safeHTML }}
+				<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+					<h2>{{ with .title }} {{ index (split . " ") 0 | safeHTML }} {{ end }}<span class="color">
+						{{ with .title }} {{ after (len (index (split . " ") 0)) . | safeHTML }} {{ end }}</span></h2>
+					<div class="border-meghna"></div>
+					<p class="padding-20-v"><strong>{{.sub_title}}</strong></p>
+				</div>
+			</div>
+			{{"<!-- /section title -->" | safeHTML }}
+
+			{{ range .service_item}}
+			{{"<!-- Single Service Item -->" | safeHTML }}
+			<article class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-duration="500ms">
+				<div class="service-block text-center">
+					<div class="service-icon text-center">
+						<div class="col-lg-12 padding-0" style="background-image: url('{{ .image | absURL }}'); background-size: cover; background-position: top center; background-repeat: no-repeat; min-height: 200px;">
+							<!-- this image is for trigger this section fallback background image -->
+							<img src="{{ .image | absURL }}" style="display: none;" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url({{ .image | absURL }})'">
+						</div>						
+						<!-- <i class="{{ .icon }}"></i> -->
+					</div>
+					<h3>{{ .name | markdownify }}</h3>
+					<!-- <p>{{ .content | markdownify }}</p> -->
+					<ul>
+						{{range .list_items}}
+						<li>{{ .text | markdownify}}</li>
+						{{end}}
+					</ul>
+				</div>
+			</article>
+			{{"<!-- End Single Service Item -->" | safeHTML }}
+			{{ end }}
+		</div>
+	</div>
+</section>
+{{"<!-- /service -->" | safeHTML }}
+{{ end }}
+{{ end }}

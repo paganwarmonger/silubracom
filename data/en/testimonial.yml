@@ -1,0 +1,24 @@
+################################# Testimonial #########################
+testimonial:
+  enable : true
+  title: Our Partners
+  bg_image : images/backgrounds/testimonial_bg.jpg
+  bg_image_webp : images/backgrounds/bg-testimonial.webp
+  testimonial_item :
+    # testimonial item loop
+    - name : INTEGRATION
+      image : images/partners/partner-integration.png
+      # image_webp : images/client/client-1.webp
+      content : INTEGRATION’s MCA technology is the only technology that is making marketing and communication more Effective, more Efficient and Accountable.
+      
+    # testimonial item loop
+    - name : MOVE BA
+      image : images/partners/partner-moveba.png
+      # image_webp : images/client/client-2.webp
+      content : SILUBRA has established an alliance with MOVE BA, added value ally of Integration Group in Turkey.
+      
+    # testimonial item loop
+    - name : MI PRO
+      image : images/partners/partner-mipro.png
+      # image_webp : images/client/client-1.webp
+      content : SILUBRA has invested in an integrated process management tool; Complete production system Research Studio and Desktop reporting software Research Analyzer.

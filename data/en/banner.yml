@@ -1,0 +1,16 @@
+############################### Banner ################################
+banner:
+  enable : true
+  bg_image_webp : "images/backgrounds/hero-area.webp"
+  bg_image : "images/backgrounds/hero-background.jpg"
+  icon : "" # themify icon pack : https://themify.me/themify-icons
+  title : "Systematic, Supportive & Selfless"
+  content : "SILUBRA is a full staged research agency."
+  button:
+    enable : true
+    label : "Who we are"
+    link : "#about-us"
+  button2:
+    enable : true
+    label : "Our Services"
+    link : "#services"

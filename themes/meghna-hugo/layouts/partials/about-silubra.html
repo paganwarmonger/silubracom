@@ -1,0 +1,63 @@
+{{ $data := index site.Data site.Language.Lang }}
+
+{{ if $data.aboutsilubra.aboutsilubra.enable }}
+{{ with $data.aboutsilubra.aboutsilubra }}
+{{"<!-- aboutsilubra -->" | safeHTML}}
+<section class="section about-silubra about-2 padding-50-v" id="about-us">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				{{"<!-- section main_title -->" | safeHTML}}
+				<div class="title text-center wow fadeIn" data-wow-duration="1500ms">
+					<h2> {{ with .title }} {{ index (split . " ") 0 | safeHTML }} {{ end }}<span class="color">
+						{{ with .title }} {{ index (split . " ") 1 | safeHTML }} {{ end }} </span></h2>
+					<div class="border-meghna"></div>
+				</div>
+			</div>
+			{{"<!-- /section main_title -->" | safeHTML}}
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 padding-0" style="background-image: url('{{ .image | absURL }}'); background-size: cover; background-position: top center; background-repeat: no-repeat; min-height: 400px;">
+				<!-- this image is for trigger this section fallback background image -->
+				<img src="{{ .image | absURL }}" style="display: none;" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url({{ .image | absURL }})'">
+			</div>
+			<div class="col-lg-6">
+				<div class="content-block">
+					<h2>{{ .sub_title | markdownify }}</h2>
+					<!-- <p>{{ .content | markdownify }}</p> -->
+					<div class="row">
+						{{ range .feature_item }}
+						<div class="col-lg-12">
+							<div class="media">
+								{{with .icon}}
+								<div class="align-self-start mr-3">
+									<i class="{{ . }}"></i>
+								</div>
+								{{ end }}
+								<div class="media-body">
+									<!-- <h4 class="media-heading">{{ .title | markdownify }}</h4> -->
+									<p>{{ .content | markdownify }}</p>
+								</div>
+							</div>
+						</div>
+						{{ end }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				<img class="seperator-image" src="{{ .divider_image | absURL }}" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url({{ .divider_image | absURL }})'">
+				<h3 class="text-center">{{.divided_content}}</h3>
+				<img class="seperator-image" src="{{ .divided_image | absURL }}" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url({{ .divided_image | absURL }})'">
+			</div>
+		</div>
+	</div>
+</section>
+{{"<!-- /silubra -->" | safeHTML}}
+{{ end }}
+{{ end }}

@@ -1,0 +1,24 @@
+################################# Testimonial #########################
+testimonial:
+  enable : true
+  title: İş Ortaklarımız
+  bg_image : images/backgrounds/testimonial_bg.jpg
+  bg_image_webp : images/backgrounds/bg-testimonial.webp
+  testimonial_item :
+    # testimonial item loop
+    - name : INTEGRATION
+      image : images/partners/partner-integration.png
+      # image_webp : images/client/client-1.webp
+      content : Integration MCA® teknoloji, firmaların tüm pazarlama iletişimi bütçe harcamalarının ölçümlenmesini ve daha etkin, verimli, hesap verilebilir yönetimini sağlarken, üst yönetimlerin doğru iletişim yatırımı kararları almalarına yardımcı olur.
+      
+    # testimonial item loop
+    - name : MOVE BA
+      image : images/partners/partner-moveba.png
+      # image_webp : images/client/client-2.webp
+      content : MOVE Business Assistance, somut hedeflere ulaşmak için müşterilerine danışmanlık hizmeti veren bir kuruluştur.
+      
+    # testimonial item loop
+    - name : MI PRO
+      image : images/partners/partner-mipro.png
+      # image_webp : images/client/client-1.webp
+      content : SILUBRA çalışma sistemine yatırım yaparak, entegre süreç yönetim programı olan MI PRO ürünlerini bünyesine dahil etmiştir. Bütün aşamaları içeren üretim sistemi Research Studio ile masaüstü raporlama programı Research Analyzer ile çalışmalarımızı sürdürüyoruz.
